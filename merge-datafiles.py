@@ -5,7 +5,6 @@ import numpy as np
 import pprint
 from scipy.stats import binomtest
 
-CODED_IDS = 'coded_ids.txt'
 DATATABLE_B3 = 'preprocessed_datafiles/MMRFD_B3.xlsx'
 DATATABLE_B2 = 'preprocessed_datafiles/MMRFD_B2.xlsx'
 DATATABLE_B1 = 'preprocessed_datafiles/MMRFD_B1.xlsx'
