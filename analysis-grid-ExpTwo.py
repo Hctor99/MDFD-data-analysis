@@ -8,7 +8,7 @@ plt.rcParams['grid.linewidth'] = 1.2         # make grid lines thicker
 plt.rcParams['grid.linestyle'] = '-'         # solid grid lines
 from utils import *
 
-DATAFILE='preprocessed_datafiles/MMRFD_all_blocks.xlsx'
+DATAFILE='preprocessed_datafiles/MDFD_all_blocks.xlsx'
 SAVE_JSD_FIGURES = False     #Set to True to save individual JSD figures
 
 #Read datafile

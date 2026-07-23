@@ -81,7 +81,7 @@ python merge-datafiles.py
 **Output:** the merged data is saved to:
 
 ```
-preprocessed_datafiles/MMRFD_all_blocks.xlsx
+preprocessed_datafiles/MDFD_all_blocks.xlsx
 ```
 
 > 💡 **You can skip this step if you'd like.** This output file is already included in the repository, so if you just want to explore the final merged data, you can go straight to the next step.
@@ -108,7 +108,7 @@ python analysis-correlations.py
 
 **Output:** all figures are saved to ```figures```, and all processed data is saved to ```final_datafiles```
 
-> 💡 See **📂 Data** for more details.
+> 💡 See **[📂 Data](#-data)** for more details.
 
 If Jupyter Notebook is preferred, all these analyses can also be run in ```analysis-and-visualization.ipynb```.
 

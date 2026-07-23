@@ -40,7 +40,7 @@ print(f'Pearson correlation between E1 mean accuracy and E2 mean arousal: r={E1_
 # --- SECOND ANALYSIS: compute correlations between experimental variables across E1 and E2 ----
 
 # Reconstructing dataframes from preprocessed datafiles
-DATAFILE='preprocessed_datafiles/MMRFD_all_blocks.xlsx'
+DATAFILE='preprocessed_datafiles/MDFD_all_blocks.xlsx'
 labels_df = pd.read_excel(DATAFILE, sheet_name='Labels data')
 labels_df = labels_df[labels_df['variable'] == 'score']
 labels_df['condition'] = labels_df['condition'].str.capitalize()

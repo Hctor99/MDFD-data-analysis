@@ -5,10 +5,10 @@ import numpy as np
 import pprint
 from scipy.stats import binomtest
 
-DATATABLE_B3 = 'preprocessed_datafiles/MMRFD_B3.xlsx'
-DATATABLE_B2 = 'preprocessed_datafiles/MMRFD_B2.xlsx'
-DATATABLE_B1 = 'preprocessed_datafiles/MMRFD_B1.xlsx'
-OUTPUT_FILE = 'preprocessed_datafiles/MMRFD_all_blocks.xlsx'
+DATATABLE_B3 = 'preprocessed_datafiles/MDFD_B3.xlsx'
+DATATABLE_B2 = 'preprocessed_datafiles/MDFD_B2.xlsx'
+DATATABLE_B1 = 'preprocessed_datafiles/MDFD_B1.xlsx'
+OUTPUT_FILE = 'preprocessed_datafiles/MDFD_all_blocks.xlsx'
 
 ACTOR_TRAITS1 = ['trustworthy', 'likeable', 'familiar', 'attractive', 'similar', 'mindreading']
 ACTOR_TRAITS2 = ['leader', 'sensitive', 'dominant', 'weak', 'emotional', 'intelligent', 'independent', 'shy', 'active', 'enthusiastic', 'helpful', 'wholesome', 'rebellious', 'noisy', 'promiscuous']

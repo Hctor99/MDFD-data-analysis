@@ -9,7 +9,7 @@ plt.rcParams['grid.linestyle'] = '-'         # solid grid lines
 from statsmodels.stats.multitest import multipletests
 from utils import labels_mean_scores, my_heatmap, my_heatmap_grays, plot_distributions
 
-DATAFILE='preprocessed_datafiles/MMRFD_all_blocks.xlsx'
+DATAFILE='preprocessed_datafiles/MDFD_all_blocks.xlsx'
 
 #Read datafile
 labels_df = pd.read_excel(DATAFILE, sheet_name='Labels data')
