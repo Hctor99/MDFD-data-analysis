@@ -10,8 +10,9 @@ Minimal experience with Python? No problem. This guide is meant to walk you thro
 
 All data and figures can already be found in this repository.
 
-- ```preprocessed_datafiles``` contains preprocessed experimental data across the three blocks, as well as a version which merges them all together.
--```final_datafiles``` contains the output of this analysis pipeline.
+- ```preprocessed_datafiles``` contains the experimental data in each of the three blocks, as well as a version which merges them all together.
+
+- ```final_datafiles``` contains the output of this analysis pipeline.
     - ```MDFD_experiment_one_data.xlsx``` contains individual responses for the 4-AFC paradigm, as well as the table included in the publication listing the mean recognition accuracy values.
     - ```MDFD_experiment_two_data.xlsx``` contains individual responses for the grid paradigm, mean values for valence and arousal, and the reported measures of agreement (i.e., cluster size and JSD).
     - ```MDFD_subjects_and_actors_data.xlsx``` contains demographic information of participants, survey scores, as well as the reported actor traits.
@@ -62,14 +63,6 @@ pip install -r requirements.txt
 
 This installs all the packages needed for the analysis (e.g., `pandas`, `numpy`, `scipy`, etc)
 
-### 6. Launch Jupyter Notebook
-
-```bash
-jupyter notebook
-```
-
-This opens Jupyter in your browser. From there, click on `analysis-and-visualization.ipynb` to open the main analysis notebook.
-
 ---
 
 ## ▶️ How to Run the Code
@@ -113,19 +106,11 @@ Finally, to reproduce the correlation analyses, run:
 python analysis-correlations.py
 ```
 
-**Output:** all figures are saved to:
-
-```
-figures
-```
-
-Finally, all processed data is saved to:
-
-```
-final_datafiles
-```
+**Output:** all figures are saved to ```figures```, and all processed data is saved to ```final_datafiles```
 
 > 💡 See **📂 Data** for more details.
+
+If Jupyter Notebook is preferred, all these analyses can also be run in ```analysis-and-visualization.ipynb```.
 
 ---
 
