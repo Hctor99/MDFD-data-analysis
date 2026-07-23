@@ -1,10 +1,20 @@
 # 🧠 MDFD Data Analysis
 
-Data analysis and visualization pipeline for the **McGill Diverse Face Database (MDFD)**. [https://www.researchgate.net/publication/397891829_The_McGill_Diverse_Face_Database_92_Complex_Mental_States_Across_Socially_Perceived_Racial_Categories](Link to preprint)
+Data analysis and visualization pipeline for the **McGill Diverse Face Database (MDFD)**. ([Link to preprint](https://www.researchgate.net/publication/397891829_The_McGill_Diverse_Face_Database_92_Complex_Mental_States_Across_Socially_Perceived_Racial_Categories))
 
 Minimal experience with Python? No problem. This guide is meant to walk you through everything step by step.
 
 ---
+
+## 📂 Data
+
+All data and figures can already be found in this repository.
+
+- ```preprocessed_datafiles``` contains preprocessed experimental data across the three blocks, as well as a version which merges them all together.
+-```final_datafiles``` contains the output of this analysis pipeline.
+    - ```MDFD_experiment_one_data.xlsx``` contains individual responses for the 4-AFC paradigm, as well as the table included in the publication listing the mean recognition accuracy values.
+    - ```MDFD_experiment_two_data.xlsx``` contains individual responses for the grid paradigm, mean values for valence and arousal, and the reported measures of agreement (i.e., cluster size and JSD).
+    - ```MDFD_subjects_and_actors_data.xlsx``` contains demographic information of participants, survey scores, as well as the reported actor traits.
 
 ## 📦 Installation
 
@@ -42,7 +52,7 @@ conda create -n mdfd_env python=3.11
 conda activate mdfd_env
 ```
 
-You should now see `(mdfd_env)` appear at the start of your terminal line — that means the environment is active.
+You should now see `(mdfd_env)` appear at the start of your terminal line. That means the environment is active.
 
 ### 5. Install the required packages
 
@@ -64,15 +74,58 @@ This opens Jupyter in your browser. From there, click on `analysis-and-visualiza
 
 ## ▶️ How to Run the Code
 
-*(Placeholder sections below — to be filled in with actual run instructions)*
+### Preprocessing
 
-### Running `Final-data-table.py`
+The script `merge-datafiles.py` fetches the preprocessed datafiles for the three experimental blocks (**B1**, **B2**, **B3**), merges them together into a single combined dataset, and computes some basic statistics.
 
-*TBD*
+To run it, activate your environment and run:
 
-### Running `analysis-and-visualization.ipynb`
+```bash
+conda activate mdfd_env
+python merge-datafiles.py
+```
 
-*TBD*
+**Output:** the merged data is saved to:
+
+```
+preprocessed_datafiles/MMRFD_all_blocks.xlsx
+```
+
+> 💡 **You can skip this step if you'd like.** This output file is already included in the repository, so if you just want to explore the final merged data, you can go straight to the next step.
+
+### Main analyses
+
+To reproduce all analyses and figures related to Experiment One, run: 
+
+```bash
+python analysis-labels-ExpOne.py
+```
+
+To reproduce all analyses and figures related to Experiment Two, run: 
+
+```bash
+python analysis-grid-ExpTwo.py
+```
+
+Finally, to reproduce the correlation analyses, run:
+
+```bash
+python analysis-correlations.py
+```
+
+**Output:** all figures are saved to:
+
+```
+figures
+```
+
+Finally, all processed data is saved to:
+
+```
+final_datafiles
+```
+
+> 💡 See **📂 Data** for more details.
 
 ---
 
